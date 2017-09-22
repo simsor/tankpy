@@ -1,0 +1,3 @@
+*.kml
+*.pyc
+__pycache__
