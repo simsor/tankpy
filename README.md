@@ -16,7 +16,7 @@ It makes it easy to filter networks depending on their name, their protection et
 ### Installing
 
 - Clone this repository
-- Run `./WarDriving.py YourWiGLEdump.kml`
+- Run `./tankpy.py YourWiGLEdump.kml`
 - Once in the shell, use the `help` command or check out the brief documentation just below
 
 ## Documentation
