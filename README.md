@@ -29,3 +29,13 @@ It makes it easy to filter networks depending on their name, their protection et
 - If you are using multiple overlapping KML files, use `dedup` to remove duplicate access points (based on their BSSID)
 - The `dump` command allows you to dump the current stations to a KML file to view it in an external program
 - Finally, use `reset` to clear all the filters
+
+## Example usage
+```shell
+$ ./tankpy.py WigleWifi_20170000.kml
+Loaded 1277 WiFi networks
+1277 >> keep wep open
+233 >> rmname orange FreeWifi "SFR WiFi FON"
+71 >> dump wep_open.kml
+71 >> exit
+```
