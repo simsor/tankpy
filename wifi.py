@@ -55,7 +55,7 @@ class WiFi:
             if "WPA2-PSK-CCMP+TKIP" in self.capabilities or \
                "WPA2-PSK-CCMP" in self.capabilities or \
                "WPA2-PSK-TKIP" in self.capabilities or \
-               "WPA2-EAP-TKIP+CCMP" in self.capabilities:
+               "WPA2-PSK-TKIP+CCMP" in self.capabilities:
                 return True
 
         # Classic WPA
@@ -75,7 +75,8 @@ class WiFi:
         if cap.lower() == "wpa2-eap":
             if "WPA2-EAP-CCMP+TKIP" in self.capabilities or \
                "WPA2-EAP-CCMP" in self.capabilities or \
-               "WPA2-EAP+FT/EAP-CCMP" in self.capabilities:
+               "WPA2-EAP+FT/EAP-CCMP" in self.capabilities or \
+               "WPA2-EAP-TKIP+CCMP" in self.capabilities:
                 return True
         
         return False
